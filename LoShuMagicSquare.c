@@ -26,13 +26,15 @@ int main(){
         printf("\n");
         getRandNum();
 
-        if(count == 100){
+        if(count == 1000){//prevent from calculating too much
             break;
         }
 
+        //test case
+        /*
         if(count == 50){
-            winningTest();
-        }
+            winningNum();
+        }*/
 
     }while(!isLoShu());
 
@@ -133,7 +135,8 @@ bool isLoShu(){
     return true;
 }
 
-void winningTest(){
+/*
+void winningNum(){
     square[0][0] = 4;
     square[0][1] = 9;
     square[0][2] = 2;
@@ -143,4 +146,4 @@ void winningTest(){
     square[2][0] = 8;
     square[2][1] = 1;
     square[2][2] = 6;
-}
+}*/
